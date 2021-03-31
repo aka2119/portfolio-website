@@ -8,8 +8,8 @@ Secondary Color: White (#fff)
   --primary-color: #dc143c;
   --secondary-color: #fff;
   --deep-purple: #4b0082;
-  --navy-blue: #00008B;
-  --grid-color: #D3D3D3;
+  --navy-blue: #00008b;
+  --grid-color: #d3d3d3;
   --orange-sun: #f76414;
   --yellow-sun: #edc655;
   --light-sun: #fcffad;
@@ -47,7 +47,8 @@ a:visited {
   color: var(--deep-purple);
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
 }
 
@@ -70,8 +71,10 @@ button,
   transition: 0.2s opacity;
 }
 
-button:hover, button:focus,
-.button:hover, .button:focus {
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
   cursor: pointer;
   opacity: 0.8;
 }
@@ -142,6 +145,10 @@ button:hover, button:focus,
   width: 200px;
 }
 
+.work-header {
+  padding-left: 35px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -170,7 +177,7 @@ button:hover, button:focus,
   }
 }
 
-@media all and (min-width: 500px) and (max-width:750px) {
+@media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -225,7 +232,7 @@ button:hover, button:focus,
 
 @keyframes cloud-move-reverse {
   from {
-    transform: translate(446px. 48px);
+    transform: translate(446px 48px);
   }
 
   to {
@@ -242,8 +249,8 @@ nav.main-navigation a {
   position: relative;
 }
 
-nav.main-navigation a:before,
-nav.main-navigation a:after {
+nav.main-navigation a::before,
+nav.main-navigation a::after {
   position: absolute;
   content: " ";
   opacity: 0;
@@ -254,23 +261,23 @@ nav.main-navigation a:after {
   left: 0;
 }
 
-nav.main-navigation a:before {
+nav.main-navigation a::before {
   top: 0;
 }
 
-nav.main-navigation a:after {
+nav.main-navigation a::after {
   bottom: 0;
 }
 
-nav.main-navigation a:hover:before,
-nav.main-navigation a:hover:after {
+nav.main-navigation a:hover::before,
+nav.main-navigation a:hover::after {
   opacity: 1;
 }
 
-nav.main-navigation a:hover:before {
+nav.main-navigation a:hover::before {
   transform: translateY(-12px);
 }
 
-nav.main-navigation a:hover:after {
+nav.main-navigation a:hover::after {
   transform: translateY(12px);
 }
