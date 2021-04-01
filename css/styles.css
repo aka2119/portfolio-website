@@ -175,6 +175,10 @@ button:focus,
   .grid {
     grid-template-columns: 1fr;
   }
+
+  .profile {
+    padding: 30px;
+  }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
